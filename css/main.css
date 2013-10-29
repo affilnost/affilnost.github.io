@@ -1,0 +1,182 @@
+* {
+    position: relative;
+
+}
+body {
+    background: url('../images/bg.jpg');
+}
+.big-frame {
+    width:100%;
+    height:100%;
+    display:none;
+    position:fixed;
+    z-index:0;
+    overflow:hidden;
+}
+.big-frame img {
+    position:absolute; left:50%; top:50%;
+    margin:-500px 0 0 -500px;
+    opacity:0.6;
+    display:block;
+}
+.big-frame img:first-child {
+    margin:-584px 0 0 -584px;
+    opacity:0.6;
+}
+.gradient {
+    position:fixed; top:50%; left:50%;
+    width:800px;
+    display:none;
+    z-index:1;
+    opacity:0.2;
+    z-index:0;
+    height:800px;
+    margin:-400px 0 0 -400px;
+    background: -moz-radial-gradient(center, ellipse cover,  rgba(170,170,170,1) 0%, rgba(170,170,170,0.97) 2%, rgba(170,170,170,0.94) 4%, rgba(170,170,170,0) 62%); /* FF3.6+ */
+    background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,rgba(170,170,170,1)), color-stop(2%,rgba(170,170,170,0.97)), color-stop(4%,rgba(170,170,170,0.94)), color-stop(62%,rgba(170,170,170,0))); /* Chrome,Safari4+ */
+    background: -webkit-radial-gradient(center, ellipse cover,  rgba(170,170,170,1) 0%,rgba(170,170,170,0.97) 2%,rgba(170,170,170,0.94) 4%,rgba(170,170,170,0) 62%); /* Chrome10+,Safari5.1+ */
+    background: -o-radial-gradient(center, ellipse cover,  rgba(170,170,170,1) 0%,rgba(170,170,170,0.97) 2%,rgba(170,170,170,0.94) 4%,rgba(170,170,170,0) 62%); /* Opera 12+ */
+    background: -ms-radial-gradient(center, ellipse cover,  rgba(170,170,170,1) 0%,rgba(170,170,170,0.97) 2%,rgba(170,170,170,0.94) 4%,rgba(170,170,170,0) 62%); /* IE10+ */
+    background: radial-gradient(ellipse at center,  rgba(170,170,170,1) 0%,rgba(170,170,170,0.97) 2%,rgba(170,170,170,0.94) 4%,rgba(170,170,170,0) 62%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#aaaaaa', endColorstr='#00aaaaaa',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+}
+.slide_wrapper {
+    background: url("../images/bg.jpg");
+    width: 800px;
+    height: 500px;
+
+
+    -webkit-box-shadow: 4px 4px 8px #000; -moz-box-shadow: 4px 4px 8px #000; box-shadow: 4px 4px 8px #000;
+}
+.my_image {
+    width: 256px;
+    height: 256px;
+    background: url("../images/me.png");
+    -moz-border-radius:10px;
+    -webkit-border-radius:10px;
+    -khtml-border-radius:10px;
+    border-radius:10px;
+    margin: 0 20px;
+}
+audio {
+    width: 0;
+    height: 0;
+    display: none;
+}
+.main_information {
+    float: left;
+    font-size: 10px;
+    width: 480px;
+    margin: 18px 0 0 45px;
+    color: #444;
+}
+.main_information .fio{
+    float: right;
+    text-transform: uppercase;
+    font-size: 15px;
+}
+.main_information .profession {
+    float: right;
+    text-transform: uppercase;
+    font-size: 13px;
+    color: #444;
+    margin: 5px 0 0 0;
+}
+.main_information .my_information {
+    float: left;
+    margin: 40px 0 0 0;
+    font-size: 18px;
+}
+.main_information .info_block {
+    float: left;
+    margin: 10px 0 0 0;
+}
+
+.logo_grid {
+    float: left;
+    margin: 50px 0 0 50px;
+}
+.logo_elem {
+    float: left;
+    width: 100px;
+    height: 100px;
+    margin: 0 20px 20px 0;
+    cursor: pointer;
+    -webkit-box-shadow: 0 0 20px #000; -moz-box-shadow: 0 0 20px #000; box-shadow: 0 0 20px #000;
+}
+.logo_elem:hover {
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=80)";
+    filter: alpha(opacity=80);
+    -moz-opacity: 0.8;
+    -khtml-opacity: 0.8;
+    opacity: 0.8;
+}
+.my_projects {
+    float: left;
+    margin: 40px 0 0 25px;
+}
+.my_project {
+    float: left;
+    width: 170px;
+    height: 170px;
+    margin: 0 20px 20px 0;
+    cursor: pointer;
+    -webkit-box-shadow: 0 0 20px #000; -moz-box-shadow: 0 0 20px #000; box-shadow: 0 0 20px #000;
+}
+
+.product_title {
+    background-color: #000;
+    position: relative;
+    margin-top: 70px;
+    width: 170px;
+    height: 100px;
+
+
+    zoom: 1; /* gives the object layout */
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=70)";
+    filter: alpha(opacity=70);
+    -moz-opacity: 0.7;
+    -khtml-opacity: 0.7;
+    opacity: 0.7;
+    cursor: pointer;
+}
+
+.product_title_text {
+    display: block;
+    position: absolute;
+    font-size: 11px;
+    color: #fff;
+    font-family: Verdana, sans-serif;
+    padding: 1px;
+    margin-right: 10px;
+
+    text-shadow: none;
+
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+    filter: alpha(opacity=100);
+    -moz-opacity: 1;
+    -khtml-opacity: 1;
+    opacity: 1;
+    bottom: 10px;
+    left: 10px;
+    cursor: pointer;
+}
+.byee {
+    float: left;
+    width: 500px;
+    height: 371px;
+    background: url("../images/bye.png");
+    margin: 10px 0 0 150px;
+}
+.contacts{
+    float: left;
+    margin: 60px 0 0 80px;
+}
+.contacts a:visited{
+    color: #333;
+}
+.last_projects {
+    float: left;
+    margin: 70px 0 0 25px;
+    font-size: 20px;
+}

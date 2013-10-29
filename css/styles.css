@@ -1,0 +1,148 @@
+#main{
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.menuUL li{
+	/* This will arrange the LI-s next to each other */
+	display:block;
+    float: left;
+    font-size: 13px;
+    text-transform: uppercase;
+    color: #aaa;
+}
+
+.menuUL li a,.menuUL li a:visited{
+	/* Styling the hyperlinks of the menu as buttons */
+	
+	float:left;
+	font-weight:bold;
+	background:url(../images/button_bg.jpg) repeat-x center bottom #666666;
+	
+	/* display:block allows for additinal CSS rules to take effect, such as paddings: */
+	display:block;
+	border:1px solid #4D4D4D;
+	color:#CCCCCC;
+	border-top-color:#565656;
+
+
+	margin:4px 5px;
+    text-align: center;
+    padding: 6px 13px 13px 13px;
+	
+	width: 100px;
+    height: 10px;
+	/* Setting a CSS3 box shadow around the button */
+	
+	-moz-box-shadow:0 0 1px black;
+	-webkit-box-shadow:0 0 1px black;
+	box-shadow:0 0 1px black;
+
+}
+
+.menuUL li a:hover{
+	/* On hover show the top, lighter, part of the background: */
+	background-position:center top;
+	text-decoration:none;
+}
+.menuUL .cufon {
+    margin-top: -15px;
+}
+#navigation{
+	/* The navigation menu bar: */
+    float: right;
+	background:#222222;
+	border:1px solid #111111;
+	float:left;
+	padding:5px 10px;
+    margin: 10px;
+    z-index: 1000;
+
+    -webkit-box-shadow: 0 0 10px #000; -moz-box-shadow: 0 0 10px #000; box-shadow: 0 0 10px #000;
+    opacity:0.8;
+}
+
+#navigation,.menuUL li a{
+	/* CSS3 rounded corners for both the navigation bar and the buttons: */
+	-moz-border-radius:4px;
+	-webkit-border-radius:4px;
+	-khtml-border-radius:4px;
+	border-radius:4px;
+}
+
+#stage{
+	/* The stage contains the individual divs that comprise the halftone icon: */
+
+	height:130px;
+	position:relative;
+	width:160px;
+    float: left;
+    margin-right: 500px;
+    z-index: 1000;
+}
+
+.dot{
+	/* The stage contains 192 .dot divs: */
+	float:left;
+	height:10px;
+	width:10px;
+}
+
+.dot.active{
+	/* When assigned the active class, the div shows a background image of a dot: */
+	background:url(../images/dot1.png) no-repeat center center;
+}
+
+.clear{
+	/* Old-school clear fix hack to clear the floats: */
+	clear:both;
+}
+
+/* The styles below are only necessary for the demo page */
+
+h1{
+	background:#222222;
+	border-bottom:1px solid black;
+	font-size:1.5em;
+	font-weight:normal;
+	margin-bottom:15px;
+	padding:15px;
+	text-align:center;
+}
+
+h2 {
+	font-size:0.9em;
+	font-weight:normal;
+	padding-right:40px;
+	position:relative;
+	right:0;
+	text-align:right;
+	text-transform:uppercase;
+	top:-48px;
+}
+
+a, a:visited {
+	color:#0196e3;
+	text-decoration:none;
+	outline:none;
+}
+
+a:hover{
+	text-decoration:underline;
+}
+
+p.tutInfo{
+	/* The tutorial info on the bottom of the page */
+	padding:10px 0;
+	text-align:center;
+	position:absolute;
+	bottom:0px;
+	background:#222222;
+	border-top:1px solid black;
+	width:100%;
+}
+
+h1,h2,p.tutInfo{
+	font-family:"Myriad Pro",Arial,Helvetica,sans-serif;
+}
