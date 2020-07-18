@@ -1,0 +1,2 @@
+(this["webpackJsonpappwork-react-starter"]=this["webpackJsonpappwork-react-starter"]||[]).push([[2],{453:function(t,a,n){},456:function(t,a,n){"use strict";var r=n(0),c=n.n(r),o=n(458),p=n(455),e=(n(58),n(50),n(445)),s=(n(447),n(457),n(459)),i=n(480);r.Component;var u=Object(s.a)(e.a);a.a=u},491:function(t,a,n){},492:function(t,a,n){}}]);
+//# sourceMappingURL=2.cb267992.chunk.js.map
